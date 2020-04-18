@@ -37,6 +37,8 @@
     <PackageReference Include="Nerdbank.GitVersioning" Version="3.0.50" PrivateAssets="all" />
   </ItemGroup>
 
+  <Import Project="..\LibGit2Sharp.Shared\LibGit2Sharp.Shared.projitems" Label="Shared" />
+
   <Import Project="..\Targets\CodeGenerator.targets" />
   <Import Project="..\Targets\GenerateNativeDllName.targets" />
 

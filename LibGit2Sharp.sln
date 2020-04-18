@@ -30,7 +30,11 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "LibGit2Sharp.Shared", "LibG
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		LibGit2Sharp.Shared\LibGit2Sharp.Shared.projitems*{091495b7-bcc3-421f-96f3-2be6eca1a42d}*SharedItemsImports = 4
 		LibGit2Sharp.Shared\LibGit2Sharp.Shared.projitems*{6a474118-6cf1-4c76-8a52-2286b9ab0cfa}*SharedItemsImports = 13
+		LibGit2Sharp.Shared\LibGit2Sharp.Shared.projitems*{e10262e8-644d-4463-a6e0-0dab7d6ac24f}*SharedItemsImports = 4
+		LibGit2Sharp.Shared\LibGit2Sharp.Shared.projitems*{ec2ea29b-e3c5-4af1-8522-499ce6fbfd6f}*SharedItemsImports = 4
+		LibGit2Sharp.Shared\LibGit2Sharp.Shared.projitems*{ee6ed99f-cb12-4683-b055-d28fc7357a34}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
