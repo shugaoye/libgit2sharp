@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "NativeLibraryLoadTestApp.x64": {
+      "commandName": "Project",
+      "commandLineArgs": "git2 C:\\Users\\roger\\Documents\\src\\github\\libgit2sharp.nativebinaries\\libgit2\\build\\Debug\\"
+    }
+  }
+}
