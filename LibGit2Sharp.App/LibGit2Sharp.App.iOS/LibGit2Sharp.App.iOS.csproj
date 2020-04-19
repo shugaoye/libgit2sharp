@@ -135,15 +135,16 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.617" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.2" />
   </ItemGroup>
   <ItemGroup>
     <NativeReference Include="..\..\libs\iOS\libgit2.a">
       <Kind>Static</Kind>
       <ForceLoad>True</ForceLoad>
     </NativeReference>
-  </ItemGroup>  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\..\LibGit2Sharp\LibGit2Sharp.csproj">
       <Project>{ed3f7a2f-0d08-4c09-aae1-b359bf59a9af}</Project>
@@ -154,4 +155,5 @@
       <Name>LibGit2Sharp.App</Name>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="..\..\LibGit2Sharp.Shared\LibGit2Sharp.Shared.projitems" Label="Shared" />
 </Project>

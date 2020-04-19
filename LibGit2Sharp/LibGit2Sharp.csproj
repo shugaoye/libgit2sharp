@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net46</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <Description>LibGit2Sharp brings all the might and speed of libgit2, a native Git implementation, to the managed world of .Net and Mono.</Description>
     <Company>LibGit2Sharp contributors</Company>
@@ -40,7 +40,6 @@
   <Import Project="..\LibGit2Sharp.Shared\LibGit2Sharp.Shared.projitems" Label="Shared" />
 
   <Import Project="..\Targets\CodeGenerator.targets" />
-  <Import Project="..\Targets\GenerateNativeDllName.targets" />
 
   <Target Name="SetNuSpecProperties" BeforeTargets="GenerateNuspec" DependsOnTargets="GetBuildVersion">
     <PropertyGroup>
