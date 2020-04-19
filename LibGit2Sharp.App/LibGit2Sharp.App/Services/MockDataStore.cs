@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using LibGit2Sharp.App.Models;
 
+using LibGit2Sharp;
+
 namespace LibGit2Sharp.App.Services
 {
     public class MockDataStore : IDataStore<Item>
@@ -21,6 +23,20 @@ namespace LibGit2Sharp.App.Services
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Fifth item", Description="This is an item description." },
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Sixth item", Description="This is an item description." }
             };
+
+            // GlobalSettings.NativeLibraryPath = "libgit2";
+
+            Console.WriteLine("LibGit2Sharp Version {0}", GlobalSettings.Version);
+
+
+            CanClone("https://github.com/libgit2/TestGitRepository");
+
+            using (var repo = new Repository(@"test_libgit2"))
+            {
+                Commit commit = repo.Head.Tip;
+                Console.WriteLine("Author: {0}", commit.Author.Name);
+                Console.WriteLine("Message: {0}", commit.MessageShort);
+            }
         }
 
         public async Task<bool> AddItemAsync(Item item)
@@ -56,5 +72,17 @@ namespace LibGit2Sharp.App.Services
         {
             return await Task.FromResult(items);
         }
+
+        public bool CanClone(string url)
+        {
+            string clonedRepoPath = Repository.Clone(url, "Temp");
+
+            using (var repo = new Repository(clonedRepoPath))
+            {
+                string dir = repo.Info.Path;
+                return true;
+            }
+        }
+
     }
 }

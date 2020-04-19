@@ -33,6 +33,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -63,6 +67,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidNativeLibrary Include="libs\arm64-v8a\libgit2-6777db8.so" />
+    <AndroidNativeLibrary Include="libs\armeabi-v7a\libgit2-6777db8.so" />
+    <AndroidNativeLibrary Include="libs\x86\libgit2-6777db8.so" />
+    <AndroidNativeLibrary Include="libs\x86\libcrypto.so.1.1" />
+    <AndroidNativeLibrary Include="libs\x86\libssl.so.1.1" />
+    <AndroidNativeLibrary Include="libs\arm64-v8a\libcrypto.so.1.1" />
+    <AndroidNativeLibrary Include="libs\arm64-v8a\libssl.so.1.1" />
+    <AndroidNativeLibrary Include="libs\armeabi-v7a\libcrypto.so.1.1" />
+    <AndroidNativeLibrary Include="libs\armeabi-v7a\libssl.so.1.1" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
@@ -87,10 +100,15 @@
     <AndroidResource Include="Resources\drawable\xamarin_logo.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\LibGit2Sharp\LibGit2Sharp.csproj">
+      <Project>{ed3f7a2f-0d08-4c09-aae1-b359bf59a9af}</Project>
+      <Name>LibGit2Sharp</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LibGit2Sharp.App\LibGit2Sharp.App.csproj">
       <Project>{89B93811-F1F5-4808-B330-7AA6DE3DC867}</Project>
       <Name>LibGit2Sharp.App</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
