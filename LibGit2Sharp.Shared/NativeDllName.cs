@@ -11,9 +11,9 @@ namespace LibGit2Sharp.Core
 #elif __ANDROID__
         public const string Name = "libgit2-6777db8";
 #elif WINDOWS_UWP
-        public const string Name = "libgit2-6777db8";
+        public const string Name = "git2";
 #else
-        public const string Name = "libgit2-6777db8";
+        public const string Name = "git2";
 #endif
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using LibGit2Sharp.App.Models;
@@ -25,9 +26,7 @@ namespace LibGit2Sharp.App.Services
             };
 
             // GlobalSettings.NativeLibraryPath = "libgit2";
-
-            Console.WriteLine("LibGit2Sharp Version {0}", GlobalSettings.Version);
-
+            Debug.WriteLine("LibGit2Sharp Version {0}", GlobalSettings.Version);
 
             CanClone("https://github.com/libgit2/TestGitRepository");
 
