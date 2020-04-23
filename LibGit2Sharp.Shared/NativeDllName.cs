@@ -13,7 +13,7 @@ namespace LibGit2Sharp.Core
 #elif WINDOWS_UWP
         public const string Name = "git2";
 #else
-        public const string Name = "git2";
+        public const string Name = "__Internal";
 #endif
     }
 }

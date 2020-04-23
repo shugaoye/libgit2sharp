@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using LibGit2Sharp.App.Models;
+
+using Xamarin.Essentials;
 
 using LibGit2Sharp;
+using LibGit2Sharp.App.Models;
 
 namespace LibGit2Sharp.App.Services
 {
@@ -26,16 +28,16 @@ namespace LibGit2Sharp.App.Services
             };
 
             // GlobalSettings.NativeLibraryPath = "libgit2";
-            Debug.WriteLine("LibGit2Sharp Version {0}", GlobalSettings.Version);
+            Debug.WriteLine("LibGit2Sharp Version {0}\n", GlobalSettings.Version);
 
             CanClone("https://github.com/libgit2/TestGitRepository");
 
-            using (var repo = new Repository(@"test_libgit2"))
+/*            using (var repo = new Repository(@"test_libgit2"))
             {
                 Commit commit = repo.Head.Tip;
                 Console.WriteLine("Author: {0}", commit.Author.Name);
                 Console.WriteLine("Message: {0}", commit.MessageShort);
-            }
+            }*/
         }
 
         public async Task<bool> AddItemAsync(Item item)
@@ -74,7 +76,8 @@ namespace LibGit2Sharp.App.Services
 
         public bool CanClone(string url)
         {
-            string clonedRepoPath = Repository.Clone(url, "Temp");
+            var testDir = FileSystem.AppDataDirectory+"/test";
+            string clonedRepoPath = Repository.Clone(url, testDir);
 
             using (var repo = new Repository(clonedRepoPath))
             {
