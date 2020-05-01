@@ -138,22 +138,15 @@
     <PackageReference Include="Xamarin.Forms" Version="4.5.0.617" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.2" />
   </ItemGroup>
-  <ItemGroup>
-    <NativeReference Include="..\..\libs\iOS\libgit2.a">
-      <Kind>Static</Kind>
-      <ForceLoad>True</ForceLoad>
-    </NativeReference>
-  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\..\LibGit2Sharp\LibGit2Sharp.csproj">
-      <Project>{ed3f7a2f-0d08-4c09-aae1-b359bf59a9af}</Project>
-      <Name>LibGit2Sharp</Name>
+    <ProjectReference Include="..\..\LibGit2Sharp.iOS\LibGit2Sharp.iOS.csproj">
+      <Project>{ec2ea29b-e3c5-4af1-8522-499ce6fbfd6f}</Project>
+      <Name>LibGit2Sharp.iOS</Name>
     </ProjectReference>
     <ProjectReference Include="..\LibGit2Sharp.App\LibGit2Sharp.App.csproj">
       <Project>{89B93811-F1F5-4808-B330-7AA6DE3DC867}</Project>
       <Name>LibGit2Sharp.App</Name>
     </ProjectReference>
   </ItemGroup>
-  <Import Project="..\..\LibGit2Sharp.Shared\LibGit2Sharp.Shared.projitems" Label="Shared" />
 </Project>

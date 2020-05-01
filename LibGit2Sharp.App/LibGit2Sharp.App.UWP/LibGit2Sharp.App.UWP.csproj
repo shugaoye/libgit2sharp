@@ -154,9 +154,9 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.5.2" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\LibGit2Sharp\LibGit2Sharp.csproj">
-      <Project>{ed3f7a2f-0d08-4c09-aae1-b359bf59a9af}</Project>
-      <Name>LibGit2Sharp</Name>
+    <ProjectReference Include="..\..\LibGit2Sharp.UWP\LibGit2Sharp.UWP.csproj">
+      <Project>{e10262e8-644d-4463-a6e0-0dab7d6ac24f}</Project>
+      <Name>LibGit2Sharp.UWP</Name>
     </ProjectReference>
     <ProjectReference Include="..\LibGit2Sharp.App\LibGit2Sharp.App.csproj">
       <Project>{89B93811-F1F5-4808-B330-7AA6DE3DC867}</Project>
@@ -164,7 +164,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
-  <Import Project="..\..\LibGit2Sharp.Shared\LibGit2Sharp.Shared.projitems" Label="Shared" />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

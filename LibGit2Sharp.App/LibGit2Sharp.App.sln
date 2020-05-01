@@ -26,10 +26,7 @@ EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		..\LibGit2Sharp.Shared\LibGit2Sharp.Shared.projitems*{091495b7-bcc3-421f-96f3-2be6eca1a42d}*SharedItemsImports = 4
-		..\LibGit2Sharp.Shared\LibGit2Sharp.Shared.projitems*{4f0dff10-e16b-4ce0-8684-af8a7b7c4e0b}*SharedItemsImports = 4
-		..\LibGit2Sharp.Shared\LibGit2Sharp.Shared.projitems*{5d68fbd1-5153-4210-8722-8f0b70f9650c}*SharedItemsImports = 4
 		..\LibGit2Sharp.Shared\LibGit2Sharp.Shared.projitems*{6a474118-6cf1-4c76-8a52-2286b9ab0cfa}*SharedItemsImports = 13
-		..\LibGit2Sharp.Shared\LibGit2Sharp.Shared.projitems*{c88592b0-24db-463d-a6f5-b716f82d2355}*SharedItemsImports = 4
 		..\LibGit2Sharp.Shared\LibGit2Sharp.Shared.projitems*{e10262e8-644d-4463-a6e0-0dab7d6ac24f}*SharedItemsImports = 4
 		..\LibGit2Sharp.Shared\LibGit2Sharp.Shared.projitems*{ec2ea29b-e3c5-4af1-8522-499ce6fbfd6f}*SharedItemsImports = 4
 		..\LibGit2Sharp.Shared\LibGit2Sharp.Shared.projitems*{ed3f7a2f-0d08-4c09-aae1-b359bf59a9af}*SharedItemsImports = 5

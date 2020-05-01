@@ -10,8 +10,8 @@
     <TemplateGuid>{9ef11e43-1701-4396-8835-8392d57abb70}</TemplateGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LibGit2Sharp</RootNamespace>
-    <AssemblyName>LibGit2Sharp</AssemblyName>
+    <RootNamespace>LibGit2Sharp.Droid</RootNamespace>
+    <AssemblyName>LibGit2Sharp.Droid</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <Deterministic>True</Deterministic>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
@@ -55,6 +55,7 @@
     <EmbeddedNativeLibrary Include="libs\arm64-v8a\libgit2.so" />
     <EmbeddedNativeLibrary Include="libs\armeabi-v7a\libgit2.so" />
     <EmbeddedNativeLibrary Include="libs\x86\libgit2.so" />
+    <EmbeddedNativeLibrary Include="libs\x86_64\libgit2.so" />
     <None Include="Resources\AboutResources.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -64,7 +65,6 @@
     <AndroidResource Include="Resources\values\strings.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="libs\x86_64\" />
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <Import Project="..\LibGit2Sharp.Shared\LibGit2Sharp.Shared.projitems" Label="Shared" />

@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("LibGit2Sharp.Resource", IsApplication=false)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("LibGit2Sharp.Droid.Resource", IsApplication=false)]
 
-namespace LibGit2Sharp
+namespace LibGit2Sharp.Droid
 {
 	
 	

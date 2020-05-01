@@ -41,7 +41,7 @@
   <Target Name="AddNativeDllCommitShaToBuildMetadata" BeforeTargets="GetBuildVersion">
 
     <ItemGroup>
-      <BuildMetadata Include="libgit2-$(libgit2_hash.Substring(0,7))" />
+      <BuildMetadata Include="libgit2" />
     </ItemGroup>
 
   </Target>
