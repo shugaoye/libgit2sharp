@@ -37,7 +37,9 @@
     <PackageReference Include="Nerdbank.GitVersioning" Version="3.0.50" PrivateAssets="all" />
   </ItemGroup>
 
-  <Import Project="..\LibGit2Sharp.Shared\LibGit2Sharp.Shared.projitems" Label="Shared" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\libgit2xamarin.nativebinaries\LibGit2Xamarin.NativeBinaries.Standard\LibGit2Xamarin.NativeBinaries.Standard.csproj" />
+  </ItemGroup>
 
   <Import Project="..\Targets\CodeGenerator.targets" />
 
